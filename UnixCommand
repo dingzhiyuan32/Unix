@@ -1,0 +1,40 @@
+ls 显示文件名
+ls -l 显示详细列表
+ls -a 显示所有文件，包含隐藏文件
+ls -R 显示文件及所有子目录
+ls -F 显示文件和目录
+
+cd dirname 目录转换
+
+pwd 显示当前路径
+
+cat filename 显示文件内容
+
+more filename 以分页方式查看文件内容
+
+rm 删除文件
+rm filename 删除文件
+rm f* 删除f开头文档
+rm -r dir删除目录dir及其下所有文档及子目录
+
+mkdir 创建目录
+mkdir dir 创建新目录
+mkdir -p dir/subdir 创建多级目录
+
+rmdir directory 删除空目录
+
+cp 文档复制
+cp file1 file2 讲文档file1复制成file2
+cp file1 dir1 将文档file1复制到目录dir1下
+cp /directory/file1 将目录/directory下的文档file1复制到当前目录
+cp /directory/file1 file2 将目录/directory下的文档file1复制到当前目录并命名为file2
+cp -r dir1 dir2 复制整个目录
+
+mv 文件移动
+mv file1 dir1 将文档file1移到目录dir1下
+mv dir1 dir2 移动整个目录
+
+find dir -name filename command 文件查找
+find . -name hello -print 寻找当前目录及所有子目录内叫hello的文档
+find . -size +2000m -print 找出大小超过2000 byte的文档
+find . -name '*.c' -exec rm {} 删除所有的.c文档
